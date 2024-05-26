@@ -1,6 +1,6 @@
 const Trade = require("../model/CryptoSchema.model");
 
-exports.storeTrade = async(trades)=>{
+exports.STORE_TRADE = async(trades)=>{
     try {
         const tradeData = trades.map((trade) => ({
             utcTime: trade.UTC_Time,
@@ -19,7 +19,7 @@ exports.storeTrade = async(trades)=>{
     }
 }
 
-exports.getAssetBalanceAtTimestamp = async (timestamp) => {
+exports.GET_ASSET_BALANCE_AT_TIMESTAMP = async (timestamp) => {
     try {
       const trades = await Trade.find({ utcTime: { $lte: new Date(timestamp) } }).sort({ utcTime: 1 });
   
