@@ -2,7 +2,7 @@
 
 This is a server-side application built with Node.js and MongoDB that parses cryptocurrency trade data from a CSV file and stores it in a database. It also provides an API to retrieve asset-wise balances of the account at any given timestamp.
 
-## Features
+## Features .
 
 ### 1. Trade Data Parsing and Storage
 
